@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NULLWAVE — estudio creativo y sello de música electrónica. Demo solo-frontend."
+    />
+    <title>NULLWAVE // estudio creativo & sello electrónico</title>
+  </head>
+  <body>
+    <!-- Overlays -->
+    <div class="fx-scanlines" aria-hidden="true"></div>
+    <div class="fx-noise" aria-hidden="true"></div>
+    <div class="fx-grid" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label"></span>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav">
+      <a href="#hero" class="nav__logo" data-cursor="logo">
+        NULL<span>WAVE</span><sup>®</sup>
+      </a>
+      <nav class="nav__links">
+        <a href="#releases" data-cursor="link">[ RELEASES ]</a>
+        <a href="#manifiesto" data-cursor="link">[ MANIFIESTO ]</a>
+        <a href="#artistas" data-cursor="link">[ ARTISTAS ]</a>
+        <a href="#contacto" data-cursor="link">[ CONTACTO ]</a>
+      </nav>
+      <div class="nav__status">
+        <span class="blink">●</span> REC / LIVE
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <canvas class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="hero__telemetry">
+          <span>LAT 40.4168</span><span>LON -3.7038</span><span>REV 2.6</span
+          ><span>UNIT / NW-CORE</span><span class="hero__sys">SYS: NOMINAL</span>
+        </div>
+
+        <div class="hero__center">
+          <p class="hero__tag">ESTUDIO CREATIVO &amp; SELLO ELECTRÓNICO // EST. 2017</p>
+          <h1 class="hero__title glitch" data-text="NULLWAVE">NULLWAVE</h1>
+          <p class="hero__sub">
+            Diseñamos identidad sonora y visual para artistas que no caben en un
+            género. Sonido, imagen y movimiento como un solo sistema.
+          </p>
+          <div class="hero__cta">
+            <a href="#releases" class="btn btn--solid magnetic" data-cursor="ver">
+              VER RELEASES
+              <span class="btn__arrow">→</span>
+            </a>
+            <a href="#contacto" class="btn magnetic" data-cursor="hola">CONTACTO</a>
+          </div>
+        </div>
+
+        <div class="hero__foot">
+          <span>SCROLL ↓</span>
+          <span class="hero__bar"><i></i></span>
+          <span>07 RELEASES / 06 ARTISTAS</span>
+        </div>
+      </section>
+
+      <!-- RELEASES — horizontal scroll -->
+      <section id="releases" class="rel">
+        <div class="rel__pin">
+          <div class="rel__head">
+            <h2 class="rel__h">RELEASES<span class="rel__slash">///</span></h2>
+            <p class="rel__meta">CATÁLOGO / ARRASTRA O HAZ SCROLL →</p>
+          </div>
+          <div class="rel__track">
+            <!-- cards injected/styled below -->
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-017</span><span>2025</span></div>
+              <h3 class="card__title">NEON LITURGY</h3>
+              <div class="card__art card__art--a"><span class="card__id">17</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>VESPER</dd></div>
+                <div><dt>BPM</dt><dd>128</dd></div>
+                <div><dt>GÉNERO</dt><dd>TECHNO</dd></div>
+              </dl>
+            </article>
+
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-016</span><span>2025</span></div>
+              <h3 class="card__title">GHOST PROTOCOL</h3>
+              <div class="card__art card__art--b"><span class="card__id">16</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>KORE / ANTUMBRA</dd></div>
+                <div><dt>BPM</dt><dd>140</dd></div>
+                <div><dt>GÉNERO</dt><dd>DRUM &amp; BASS</dd></div>
+              </dl>
+            </article>
+
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-015</span><span>2024</span></div>
+              <h3 class="card__title">TERMINAL DRIFT</h3>
+              <div class="card__art card__art--c"><span class="card__id">15</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>SAIKO</dd></div>
+                <div><dt>BPM</dt><dd>124</dd></div>
+                <div><dt>GÉNERO</dt><dd>DEEP HOUSE</dd></div>
+              </dl>
+            </article>
+
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-014</span><span>2024</span></div>
+              <h3 class="card__title">BLACKOUT SEQ.</h3>
+              <div class="card__art card__art--a"><span class="card__id">14</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>NULLSET</dd></div>
+                <div><dt>BPM</dt><dd>132</dd></div>
+                <div><dt>GÉNERO</dt><dd>INDUSTRIAL</dd></div>
+              </dl>
+            </article>
+
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-013</span><span>2024</span></div>
+              <h3 class="card__title">STATIC BLOOM</h3>
+              <div class="card__art card__art--b"><span class="card__id">13</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>LUME</dd></div>
+                <div><dt>BPM</dt><dd>090</dd></div>
+                <div><dt>GÉNERO</dt><dd>AMBIENT</dd></div>
+              </dl>
+            </article>
+
+            <article class="card" data-cursor="play">
+              <div class="card__top"><span>NW-012</span><span>2023</span></div>
+              <h3 class="card__title">HEX MIRAGE</h3>
+              <div class="card__art card__art--c"><span class="card__id">12</span></div>
+              <dl class="card__data">
+                <div><dt>ARTISTA</dt><dd>VESPER</dd></div>
+                <div><dt>BPM</dt><dd>150</dd></div>
+                <div><dt>GÉNERO</dt><dd>HARD TECHNO</dd></div>
+              </dl>
+            </article>
+
+            <article class="card card--end" data-cursor="hola">
+              <h3 class="card__title">¿TU PRÓXIMO<br />RELEASE?</h3>
+              <p class="card__pitch">Enviamos demos a A&amp;R una vez al mes.</p>
+              <a href="#contacto" class="btn btn--solid">ENVIAR DEMO →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANIFIESTO -->
+      <section id="manifiesto" class="man">
+        <div class="man__label">[ MANIFIESTO / DOC NW-000 ]</div>
+        <div class="man__list">
+          <div class="man__row" data-reveal>
+            <span class="man__n">01</span>
+            <p>NO SEGUIMOS TENDENCIAS. <span class="hl">CONSTRUIMOS SISTEMAS.</span></p>
+          </div>
+          <div class="man__row" data-reveal>
+            <span class="man__n">02</span>
+            <p>EL RUIDO ES INFORMACIÓN. LO DEMÁS ES <span class="hl">RELLENO.</span></p>
+          </div>
+          <div class="man__row" data-reveal>
+            <span class="man__n">03</span>
+            <p>CADA RELEASE ES UNA IDENTIDAD COMPLETA: SONIDO, IMAGEN, MOVIMIENTO.</p>
+          </div>
+          <div class="man__row" data-reveal>
+            <span class="man__n">04</span>
+            <p>SI FUNCIONA EN CUALQUIER PARTE, <span class="hl">NO FUNCIONA AQUÍ.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTISTAS -->
+      <section id="artistas" class="art">
+        <div class="art__head">
+          <h2 class="art__h">ARTISTAS &amp; EQUIPO</h2>
+          <span class="art__count">06 / UNIDADES ACTIVAS</span>
+        </div>
+        <div class="art__grid">
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-01</span><h3>VESPER</h3><p>Productor / Resident</p></article>
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-02</span><h3>ANTUMBRA</h3><p>Live A/V</p></article>
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-03</span><h3>SAIKO</h3><p>Productor</p></article>
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-04</span><h3>LUME</h3><p>Diseño Sonoro</p></article>
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-05</span><h3>NULLSET</h3><p>Dirección de Arte</p></article>
+          <article class="unit" data-cursor="ver"><span class="unit__i">A-06</span><h3>KORE</h3><p>A&amp;R / Mastering</p></article>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="con">
+        <div class="con__left">
+          <p class="con__label">[ CANAL ABIERTO ]</p>
+          <h2 class="con__h glitch" data-text="HABLEMOS">HABLEMOS</h2>
+          <p class="con__sub">
+            Booking, colaboraciones o demos. Respondemos en 48 horas.
+          </p>
+          <ul class="con__links">
+            <li><span>EMAIL</span> hola@nullwave.fm</li>
+            <li><span>TEL</span> +34 600 00 17 00</li>
+            <li><span>BASE</span> MADRID / BERLÍN</li>
+            <li class="con__social">
+              <a href="#" data-cursor="link">IG</a><a href="#" data-cursor="link">SC</a
+              ><a href="#" data-cursor="link">BC</a><a href="#" data-cursor="link">YT</a>
+            </li>
+          </ul>
+        </div>
+        <form class="con__form" novalidate>
+          <label>
+            <span>NOMBRE / ALIAS</span>
+            <input type="text" name="name" placeholder="_" autocomplete="off" />
+          </label>
+          <label>
+            <span>EMAIL</span>
+            <input type="email" name="email" placeholder="_" autocomplete="off" />
+          </label>
+          <label>
+            <span>MENSAJE</span>
+            <textarea name="msg" rows="4" placeholder="_"></textarea>
+          </label>
+          <button type="submit" class="btn btn--solid magnetic" data-cursor="send">
+            TRANSMITIR <span class="btn__arrow">→</span>
+          </button>
+          <p class="con__note" data-note>// FORMULARIO DEMO — NO ENVÍA DATOS REALES</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__marquee" aria-hidden="true">
+        <div class="foot__track">
+          <span>NULLWAVE®</span><span>///</span><span>ESTUDIO + SELLO</span><span>///</span
+          ><span>DEMO FRONTEND</span><span>///</span><span>NULLWAVE®</span><span>///</span
+          ><span>ESTUDIO + SELLO</span><span>///</span><span>DEMO FRONTEND</span><span>///</span>
+        </div>
+      </div>
+      <div class="foot__bottom">
+        <span>© 2026 NULLWAVE RECORDINGS</span>
+        <span>DEMO · SOLO FRONTEND · DATOS FICTICIOS</span>
+        <span>REV 2.6 / BUILD NW-CORE</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
