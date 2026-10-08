@@ -1,37 +1,37 @@
-# NULLWAVE — Landing Estudio / Sello Brutalista
+# NULLWAVE — Brutalist Studio / Label Landing
 
-Landing page de demostración para **NULLWAVE**, un estudio creativo y sello ficticio de música electrónica. Estética brutalista-cyberpunk: dark mode, alto contraste, grid visible, tipografía display gigante y neón.
+Demo landing page for **NULLWAVE**, a fictional creative studio and electronic music label. Brutalist-cyberpunk aesthetic: dark mode, high contrast, visible grid, giant display type and neon.
 
-> **Demo solo-frontend.** No hay backend, reproductor real, tienda ni envío de formularios. Releases, artistas y datos de contacto son ficticios. El formulario simula la transmisión y no manda nada. El objetivo es mostrar capacidad visual y de interacción.
+> **Frontend-only demo.** There is no backend, real player, store or form submission. Releases, artists and contact details are fictional. The form simulates the transmission and sends nothing. The goal is to show visual and interaction skills.
 
 ## Stack
 
-- **Vite** + **TypeScript vanilla** (sin framework)
-- **GSAP** + **ScrollTrigger** para scroll horizontal y reveals
-- **Canvas 2D** para el campo de partículas del hero
-- CSS vanilla (sin librería de utilidades)
+- **Vite** + **vanilla TypeScript** (no framework)
+- **GSAP** + **ScrollTrigger** for horizontal scroll and reveals
+- **Canvas 2D** for the hero's particle field
+- Vanilla CSS (no utility library)
 
-## Diseño
+## Design
 
-- **Paleta:** negro (`#0B0B0F`) + neón cyan (`#00F0FF`) y magenta (`#FF2BD6`), lima (`#C6FF3A`) como tercer acento. Dark mode.
-- **Tipografía:** Space Mono (monospace) para datos/telemetría + Archivo Black para el display gigante.
-- **Layout:** rompe la convención — grid visible, esquinas a 90°, marcadores ASCII, sección de **scroll horizontal**.
+- **Palette:** black (`#0B0B0F`) + neon cyan (`#00F0FF`) and magenta (`#FF2BD6`), lime (`#C6FF3A`) as a third accent. Dark mode.
+- **Typography:** Space Mono (monospace) for data/telemetry + Archivo Black for the giant display type.
+- **Layout:** breaks convention — visible grid, 90° corners, ASCII markers, a **horizontal scroll** section.
 
-## Animaciones
+## Animations
 
-- **Cursor personalizado** con anillo, etiqueta de acción y `mix-blend-mode`.
-- **Botones magnéticos** (siguen al cursor con física elástica).
-- **Glitch** en titulares (capas cyan/magenta con clip-path).
-- **Scroll horizontal** de releases con ScrollTrigger (pin + scrub).
-- **Partículas en canvas** que reaccionan al ratón en el hero.
-- Scanlines, ruido y grid como overlays fijos.
-- Reveals escalonados, marquee y fallback para `prefers-reduced-motion`.
+- **Custom cursor** with a ring, action label and `mix-blend-mode`.
+- **Magnetic buttons** (they follow the cursor with elastic physics).
+- **Glitch** on headlines (cyan/magenta layers with clip-path).
+- **Horizontal scroll** of releases with ScrollTrigger (pin + scrub).
+- **Canvas particles** that react to the mouse in the hero.
+- Scanlines, noise and grid as fixed overlays.
+- Staggered reveals, marquee and a fallback for `prefers-reduced-motion`.
 
-## Secciones
+## Sections
 
-Hero animado · Releases (scroll horizontal) · Manifiesto · Artistas / equipo · Contacto · Footer.
+Animated hero · Releases (horizontal scroll) · Manifesto · Artists / team · Contact · Footer.
 
-## Desarrollo
+## Development
 
 ```sh
 npm install
